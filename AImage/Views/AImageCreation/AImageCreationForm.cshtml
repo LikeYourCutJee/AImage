@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Create Image";
+}
+
+@model ImageCardModel
+
+<div style="text-align:center">
+    <div class="card p-3 mb-3 mt-4" style="display: inline-block;">
+        <div class="card-body">
+            <form asp-controller="AImageCreation" asp-action="CreateImage">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-auto" placeholder="Enter description" name="UserDescription">
+                    <button type="submit" class="btn btn-outline-primary mx-auto">draw</button>
+                </div>
+            </form>
+        </div>
+        <img class="rounded mx-auto d-block" style="max-width:370px" src="@Url.Content(Model.ImgUrl)" />
+        <div class="card-body" style="max-width:350px">
+            <p class="card-text">@Model.Description</p>
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-center">
+                <form asp-controller="AImageCreation" asp-action="CreateImage">
+                    <input type="hidden" name="UserDescription" value="@Model.Description" />
+                    <button type="submit" class="btn btn-outline-primary mx-2">Redraw</button>
+                </form>
+                <form asp-controller="AImageCreation" asp-action="DownloadImage">
+                    <input type="hidden" name="ImgPath" value="@Url.Content(Model.ImgUrl)" />
+                    <button type="submit" class="btn btn-outline-primary mx-2">Download</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

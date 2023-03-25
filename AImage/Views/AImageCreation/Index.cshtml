@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Create Image";
+}
+
+<div style="text-align:center">
+    <div class="card p-3 mb-3 mt-4" style="display: inline-block;">
+        <div class="card-body">
+            <form>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-auto" placeholder="Enter description" name="UserDescription" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button type="submit" class="btn btn-outline-primary mx-auto">Generate</button>
+                </div>
+            </form>
+        </div>
+        <img class=" rounded mx-auto d-block" style="max-width:370px" src="@Model.ImgUrl" />
+        <div class="card-body" style="max-width:350px">
+            <p class="card-text">@Model.Description.</p>
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-center">
+                <form>
+                    <input type="hidden" value="@Model.Description" name="UserDescription" />
+                    <button type="submit" class="btn btn-outline-primary mx-2">Regenerate</button>
+                </form>
+                <form>
+                    <button type="submit" class="btn btn-outline-primary mx-2">Add to DB</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
