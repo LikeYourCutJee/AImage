@@ -6,7 +6,7 @@ namespace AImage.Controllers
 {
     public class AImageCreationController : Controller
     {
-        private static ImageCardModel DefaultCardModel { get; set; } = new ImageCardModel() { ImgUrl = "", Description = "Nothing yet" };
+        private static ImageCardModel DefaultCardModel { get; set; } = new ImageCardModel() { ImgUrl = "/Img/Error.jpg ", Description = "Nothing yet" };
         private static ImageCardModel DefaultErrorCardModel { get; set; } = new ImageCardModel() { ImgUrl = "/Img/Error.jpg", Description = "Sorry, something went wrong" };
 
         private readonly IConfiguration _configuration;
