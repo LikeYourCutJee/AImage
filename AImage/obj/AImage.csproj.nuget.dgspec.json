@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fbest\\source\\repos\\AImage\\AImage\\AImage.csproj": {}
+    "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fbest\\source\\repos\\AImage\\AImage\\AImage.csproj": {
+    "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fbest\\source\\repos\\AImage\\AImage\\AImage.csproj",
+        "projectUniqueName": "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj",
         "projectName": "AImage",
-        "projectPath": "C:\\Users\\fbest\\source\\repos\\AImage\\AImage\\AImage.csproj",
+        "projectPath": "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj",
         "packagesPath": "C:\\Users\\fbest\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fbest\\source\\repos\\AImage\\AImage\\obj\\",
+        "outputPath": "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"

@@ -1,0 +1,26 @@
+﻿@model List<ImageCardModel>
+
+<div style="text-align:center; display: flex; flex-wrap: wrap;">
+    @{
+        foreach (var userImg in Model)
+        {
+            <div class="card p-1 m-1" style="display: inline-block;">
+                <img class=" rounded mx-auto d-block" style="max-width:300px" src="@Url.Content(userImg.ImgUrl)" />
+                <div class="card-body" style="max-width:300px">
+                    <p class="card-text">@userImg.Description.</p>
+                </div>
+                <div class="mb-2 d-flex justify-content-center" method="post">
+                    <form asp-controller="AImageDb" asp-action="RemoveImgCardFromDb">
+                        <input type="hidden" value="@userImg.Id" name="ImageId" />
+                        <button type="submit" class="btn btn-outline-danger">Remove</button>
+                    </form>
+                </div>
+                <div class="card-body" style="font-size:12px">
+                    <figcaption class="text-muted">
+                        @userImg.CreationTime (ID: @userImg.Id)
+                    </figcaption>
+                </div>
+            </div>
+        }
+    }
+</div>

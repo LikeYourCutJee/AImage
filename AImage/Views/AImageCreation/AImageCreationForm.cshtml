@@ -28,6 +28,12 @@
                     <input type="hidden" name="ImgPath" value="@Url.Content(Model.ImgUrl)" />
                     <button type="submit" class="btn btn-outline-primary mx-2">Download</button>
                 </form>
+                <form asp-controller="AImageDb" asp-action="AddImgCardtoDb">
+                    <input type="hidden" value="@Url.Content(Model.ImgUrl)" asp-for="@Model.ImgUrl" />
+                    <input type="hidden" value="@Model.Description" asp-for="@Model.Description" />
+                    <input type="hidden" value="@Model.CreationTime" asp-for="@Model.CreationTime" />
+                    <button type="submit" class="btn btn-outline-primary mx-2">Add to "Best"</button>
+                </form>
             </div>
         </div>
     </div>
