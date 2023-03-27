@@ -2,9 +2,9 @@
 
 namespace AImage.SideFunctionality.Network
 {
-    public class Downloader
+    public class ServerDownloader
     {
-        public static async Task<bool> DownloadImageAsync(string imageUrl, string relativePath)
+        public static async Task<bool> DownloadRemoteImageAsync(string imageUrl, string relativePath)
         {
             try
             {

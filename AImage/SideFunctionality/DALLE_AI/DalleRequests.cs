@@ -48,11 +48,5 @@ namespace AImage.SideFunctionality.DALLE_AI
                 return null;
             }
         }
-
-        //Makes API call, recieves an image by description and saves it to entered path, returns the result of operation
-        public bool GenerateAndSaveImage(string ImageDescription, string Path)
-        {
-            return true;
-        }
     }
 }

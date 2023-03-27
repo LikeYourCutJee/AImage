@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj": {}
+    "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\AImage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj": {
+    "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\AImage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj",
+        "projectUniqueName": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\AImage.csproj",
         "projectName": "AImage",
-        "projectPath": "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj",
+        "projectPath": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\AImage.csproj",
         "packagesPath": "C:\\Users\\fbest\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\obj\\",
+        "outputPath": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

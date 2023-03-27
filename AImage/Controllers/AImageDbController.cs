@@ -67,7 +67,7 @@ namespace AImage.Controllers
             {
                 var UniqueFileId = UserCard.GetHashCode() + ".jpg";
                 var relativePath = RootDirectory + RelativeStorageDirectoryPath + UniqueFileId;
-                if (await Downloader.DownloadImageAsync(UserCard.ImgUrl, relativePath))
+                if (await ServerDownloader.DownloadRemoteImageAsync(UserCard.ImgUrl, relativePath))
                 {
                     UserCard.ImgUrl = RelativeStorageDirectoryPath + UniqueFileId;
                     DbContext.ImageCards.Add(UserCard);
@@ -79,6 +79,16 @@ namespace AImage.Controllers
             }
             else
                 return false;
+        }
+        public async Task<IActionResult> DownloadImage(string ImgPath)
+        {
+            var relativePath = RootDirectory + ImgPath;
+            var File = await ClientDownloader.DownloadLocalImageAsync(relativePath);
+
+            if (File != null)
+                return File;
+            else
+                return View("~/Views/AImageCreation/AImageCreationForm.cshtml", AImageCreationController.DefaultErrorCardModel);
         }
     }
 }

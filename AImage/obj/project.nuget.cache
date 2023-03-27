@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T6VuV6arnDnoZv4Pp9kmllsDqwvUM2OIE54xTQcuECHb+0VEx0Y1vnOEmxBqi1maY20Ha7UA3dGjKZYgKPVJzA==",
+  "dgSpecHash": "jytwE8iAPP7QU/EoUzRMdkx9YXjAewfHz+BH45+50fdbC+EaGyvOwR0C/kjvZQTYwqSRc+njqUB616CytE9ETQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fbest\\source\\repos\\Aimage\\AImage\\AImage.csproj",
+  "projectFilePath": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\AImage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fbest\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fbest\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.15\\microsoft.data.sqlite.core.6.0.15.nupkg.sha512",

@@ -12,7 +12,11 @@
                 <div class="mb-2 d-flex justify-content-center" method="post">
                     <form asp-controller="AImageDb" asp-action="RemoveImgCardFromDb">
                         <input type="hidden" value="@userImg.Id" name="ImageId" />
-                        <button type="submit" class="btn btn-outline-danger">Remove</button>
+                        <button type="submit" class="btn btn-outline-danger mx-2">Remove</button>
+                    </form>
+                    <form asp-controller="AImageDb" asp-action="DownloadImage">
+                        <input type="hidden" value="@userImg.ImgUrl" name="ImgPath" />
+                        <button type="submit" class="btn btn-outline-success mx-2">Download</button>
                     </form>
                 </div>
                 <div class="card-body" style="font-size:12px">
