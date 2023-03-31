@@ -6,7 +6,7 @@ namespace AImage.SideFunctionality.DALLE_AI
 {
     public class DalleRequests
     {
-        protected string MySecretApiKey { get; set; }
+        protected string MySecretApiKey { get;}
 
         public DalleRequests(string ApiKey)
         {
@@ -22,8 +22,6 @@ namespace AImage.SideFunctionality.DALLE_AI
                 var request = new RestRequest("", Method.Post);
                 request.AddHeader("Content-Type", "application/json");
                 request.AddParameter("Authorization", $"Bearer {MySecretApiKey}", ParameterType.HttpHeader);
-
-                // Параметры запроса для DALL-E API
                 request.AddParameter("application/json", "{\"model\": \"image-alpha-001\",\"prompt\": \""+ ImgDescription +"\",\"num_images\": 1,\"size\": \"512x512\",\"response_format\": \"url\"}", ParameterType.RequestBody);
 
                 RestResponse response = client.Execute(request);

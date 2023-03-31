@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/QA1YvpITWWHutg4g7aOYIiuvBMCKR7aUG5ro6jabkI=",
+  "Hash": "B750HTJH8AqN9XSW7LuEXz0gTbDAaasAuimFIVaMeIc=",
   "Source": "AImage",
   "BasePath": "_content/AImage",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\wwwroot\\Img\\41388618.jpg",
+      "SourceId": "AImage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\wwwroot\\",
+      "BasePath": "_content/AImage",
+      "RelativePath": "Img/41388618.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\41388618.jpg"
+    },
+    {
       "Identity": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\wwwroot\\Img\\42294036.jpg",
       "SourceId": "AImage",
       "SourceType": "Discovered",
@@ -119,12 +136,12 @@
       "OriginalItemSpec": "wwwroot\\Img\\42294036.jpg"
     },
     {
-      "Identity": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\wwwroot\\Img\\63088713.jpg",
+      "Identity": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\wwwroot\\Img\\66095732.jpg",
       "SourceId": "AImage",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\wwwroot\\",
       "BasePath": "_content/AImage",
-      "RelativePath": "Img/63088713.jpg",
+      "RelativePath": "Img/66095732.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +150,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Img\\63088713.jpg"
+      "OriginalItemSpec": "wwwroot\\Img\\66095732.jpg"
     },
     {
       "Identity": "C:\\Users\\fbest\\OneDrive\\Рабочий стол\\AImage\\AImage\\wwwroot\\Img\\7691362.jpg",

@@ -1,4 +1,4 @@
-﻿using AImage.Models;
+﻿ using AImage.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AImage.Data

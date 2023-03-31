@@ -15,7 +15,7 @@ namespace AImage.Controllers
         public AImageCreationController(IConfiguration configuration)
         {
             _configuration = configuration;
-            DalleRequests = new DalleRequests(_configuration.GetValue<string>("openAiAPIKey"));
+            DalleRequests = new DalleRequests(_configuration.GetValue<string>("openaiApiKey"));
         }
         public IActionResult Index()
         {
@@ -27,7 +27,7 @@ namespace AImage.Controllers
         }
         public IActionResult CreateImage(string UserDescription)
         {
-            if (UserDescription != string.Empty)
+            if (UserDescription != string.Empty && UserDescription != null)
             {
                 var ImageUrl = DalleRequests.GenerateImageByDescription(UserDescription);
                 if (ImageUrl != null)
